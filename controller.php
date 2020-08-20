@@ -1,13 +1,13 @@
 
 <?php
 
-//en poo class Animaux, model: animalsManager
+//en poo class Animaux,
 function animalsList()
 {
   $animalsManager = new Animaux(); // Création d'un objet
   $animals = $animalsManager->get_all();  // Appel la fonction qui renvoie toutes les données sur les animaux en bdd
 
-    require('view/accueilView.php');
+  require('view/accueilView.php');
 
 }
 
@@ -19,11 +19,10 @@ function animalsListAdmin()
     require('view/adminView.php');
 }
 
-function animaladd()
+function animalAdd($name, $type, $family, $alim, $description, $photo)
 {
   $animal = new Animaux();
   $animal->add($_POST['name']);
-  $photo = file_get_contents(getcwd() . DIRECTORY_SEPARATOR . "chat.jpg");
 
   $id = $animal->get_name($_POST['name'])['id'];
   $animal->set_name($id, $_POST['name']);
@@ -40,28 +39,51 @@ function animaladd()
 function animalDelete($id)
 {
   $animalsManager = new Animaux();
-  $animal = $animalsManager->remove($id);
+  $animal = $animalsManager->remove($_GET['id']);
 
-  require('admin.php');
+  animalsListAdmin();
+}
+
+function animalChange($id)
+{
+  $animalsManager = new Animaux;
+  $animal = $animalsManager->get_id($id);
+  var_dump($animal);
+  var_dump($id);
+
+  if (isset($_POST['submit'])) {
+    if (empty($_FILES['image']['tmp_name'])===false) {
+      $file = $_FILES['image'];
+      $photo = file_get_contents($file['tmp_name']);
+    }
+
+    var_dump($animal);
+    var_dump($_POST['name']);
+
+    $animalsManager->set_name($id, $_POST['name']);
+    $animalsManager->set_type($id, $_POST['type']);
+    $animalsManager->set_family($id, $_POST['family']);
+    $animalsManager->set_alim($id, $_POST['alim']);
+    $animalsManager->set_description($id, $_POST['description']);
+    if (isset($photo)===true) {
+      $animalsManager->set_photo($id, $photo);
+    }
+  }
+
+
+  require('view/changeView.php');
 }
 
 
-// function animalPage()
-// {
-//     // $animalsManager = new animalsManager(); // Création d'un objet
-//     // $animal = $animalsManager->getAnimals($_GET['id']); //  Appel la fonction qui renvoie toutes les données concernant l'animal ou $id = $_GET['id']
-//     $animalsManager = new Animaux();
-//     $animal = $animalsManager->get_name($id);
-//     $animal = $animalsManager->get_type($id);
-//     $animal = $animalsManager->get_family($id);
-//     $animal = $animalsManager->get_alim($id);
-//     $animal = $animalsManager->get_description($id);
-//     $animal = $animalsManager->get_photo($id);
-//
-// //$photo = file_get_contents(getcwd() . DIRECTORY_SEPARATOR . "chat.jpg");
-//
-//     require('view/animalView.php');
-// }
+function animalPage()
+{
+  // $animalsManager = new animalsManager(); // Création d'un objet
+  // $animal = $animalsManager->getAnimals($_GET['id']); //  Appel la fonction qui renvoie toutes les données concernant l'animal ou $id = $_GET['id']
+  $animalsManager = new Animaux();
+  $animal = $animalsManager->get_id($id);
+
+    require('view/animalView.php');
+}
 
 
 
