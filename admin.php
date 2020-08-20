@@ -1,6 +1,6 @@
 
 <?php
-session_start();
+require_once ('sessionstart.php');
 require('controller.php');
 require('Animaux.php');
 
