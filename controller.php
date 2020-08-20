@@ -44,21 +44,28 @@ function animalDelete($id)
   animalsListAdmin();
 }
 
+function animalArchived($id){
+  $animalsManager = new Animaux();
+  $animal = $animalsManager->get_id($id);
+
+  if ($animal['archived'] === 'false') {
+    $animalsManager->archive($animal['id']);
+  } else {
+    $animalsManager->unarchive($animal['id']);
+  }
+  animalsListAdmin();
+}
+
 function animalChange($id)
 {
   $animalsManager = new Animaux;
   $animal = $animalsManager->get_id($id);
-  var_dump($animal);
-  var_dump($id);
 
   if (isset($_POST['submit'])) {
     if (empty($_FILES['image']['tmp_name'])===false) {
       $file = $_FILES['image'];
       $photo = file_get_contents($file['tmp_name']);
     }
-
-    var_dump($animal);
-    var_dump($_POST['name']);
 
     $animalsManager->set_name($id, $_POST['name']);
     $animalsManager->set_type($id, $_POST['type']);
@@ -70,22 +77,16 @@ function animalChange($id)
     }
   }
 
-
   require('view/changeView.php');
 }
 
 
 function animalPage()
 {
-  // $animalsManager = new animalsManager(); // Création d'un objet
-  // $animal = $animalsManager->getAnimals($_GET['id']); //  Appel la fonction qui renvoie toutes les données concernant l'animal ou $id = $_GET['id']
   $animalsManager = new Animaux();
   $animal = $animalsManager->get_id($id);
 
     require('view/animalView.php');
 }
-
-
-
 
 ?>

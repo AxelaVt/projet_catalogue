@@ -1,5 +1,4 @@
 
-
 <?php
 session_start();
 
@@ -8,8 +7,8 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     // pour éliminer toute attaque de type injection SQL et XSS
     $username = htmlspecialchars($_POST['username']);
     $password = htmlspecialchars($_POST['password']);
-     var_dump($username);
-     var_dump($password);
+     // var_dump($username);
+     // var_dump($password);
     //
     //if($username !== "" && $password !== ""){
     //       try {

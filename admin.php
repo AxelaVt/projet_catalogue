@@ -5,10 +5,10 @@ require('controller.php');
 require('Animaux.php');
 
  var_dump($_SESSION);
-// if ($_SESSION['admin'] !== true ) {
-//   echo "devez vous connecter";
-//   header("location:view/connexionView.php");
-// }
+if ($_SESSION['admin'] !== true ) {
+  echo "devez vous connecter";
+  header("location:view/connexionView.php");
+}
 
 if($_SESSION['username'] !== ""){
     $user = $_SESSION['username'];

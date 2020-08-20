@@ -2,6 +2,6 @@
 
 require "Animaux.php";
 
-$animaux = new Animaux();
+$animal = new Animaux();
 
-echo $animaux->get_id($_GET['id'])['photo'];
+echo $animal->get_id($_GET['id'])['photo'];
