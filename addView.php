@@ -44,6 +44,7 @@ include "header.php";
       <textarea type="text" id="" class="form-control" rows="10" cols="50" name="description"></textarea>
       </div>
       <button type="submit" class="btn btn-secondary" name="submit">Enregistrer</button>
+      <!-- <button type="button" value="Annuler" onclick="history.back()" class="btn btn-primary">Annuler</button> -->
       <button type='reset' class="btn btn-secondary">Annuler</button>
       <a href="../admin.php"><button type="button" class="btn btn-secondary">admin</button></a>
     </form>

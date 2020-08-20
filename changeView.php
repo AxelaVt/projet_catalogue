@@ -33,12 +33,6 @@ include "header.php";
         <!-- <button type="submit" name="upload" class="btn btn-primary" value="Uploader">Uploader</button> -->
       </div>
       <div class="form-group">
-      <!-- <label for="archiver">Achiver:</label>
-        <select name="archiver">
-          <option value="" selected><?= $animal['archived'] ?>false</option>
-          <option value="">true</option>
-        </select>
-      </div> -->
 
       <div class="form-group">
       <label for="description">Description:</label>
@@ -46,7 +40,7 @@ include "header.php";
       </div>
       <button type="submit" class="btn btn-secondary" name="submit">Enregistrer</button>
       <button type='reset' class="btn btn-secondary">Annuler</button>
-      <a href="../admin.php"><button type="button" class="btn btn-secondary">admin</button></a>
+      <a href="admin.php"><button type="button" class="btn btn-secondary">admin</button></a>
     </form>
 
 </div>
