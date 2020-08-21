@@ -106,6 +106,7 @@
 
 <section>
   <div class="section-2">
+
     <div class="title">
       <div class="content">
         <h1> Catégories</h1>
@@ -114,38 +115,38 @@
     </div>
       <div class="container">
     			<div class="box">
-    				<img src="media/whitewolf.jpg">
+    				<a href="#"><img src="media/whitewolf.jpg"></a>
             <div class="box-overlay">
               <div class="text">Hello World
               </div>
             </div>
     			</div>
     			<div class="box">
-    				<img src="media/turtle.jpg">
+    			<a href="#"><img src="media/turtle.jpg"> </a>
     			</div>
     			<div class="box">
-    				<img src="media/cerf.jpg">
+    				<a href="#"><img src="media/cerf.jpg"></a>
     			</div>
     			<div class="box">
-    				<img src="media/lion.jpg">
+    				<a href="animal.php"><img src="media/lion.jpg"></a>
     	</div>
       <div class="box">
-        <img src="media/bears.jpeg">
+        <a href="#"><img src="media/bears.jpeg"></a>
       </div>
       <div class="box">
-        <img src="media/chat.jpg">
+        <a href="#"><img src="media/chat.jpg"></a>
       </div>
       <div class="box">
-        <img src="media/tigre.jpg">
+        <a href="#"><img src="media/tigre.jpg"></a>
       </div>
       <div class="box">
-        <img src="media/panthere.jpg">
+        <a href="#"><img src="media/panthere.jpg"></a>
       </div>
       <div class="box">
-        <img src="media/lynx.jpg">
+        <a href="#"><img src="media/lynx.jpg"></a>
       </div>
       <div class="box">
-        <img src="media/leopard.jpg">
+        <a href="#"><img src="media/leopard.jpg"></a>
       </div>
     </div>
   </div>
