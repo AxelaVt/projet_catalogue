@@ -1,4 +1,25 @@
-#sidebar-container {
+.sidebar-navigation input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.sidebar-navigation .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-navigation .search-container button:hover {
+  background: #ccc;
+}
+
+ #sidebar-container {
   position: fixed;
   width: 0px;
   height: 100%;
@@ -144,6 +165,10 @@
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero .container {
@@ -193,14 +218,49 @@ html {
   background-color: #1A1A1A;
 }
 
-#history {
-  height: 50vh;
+.ong {
+  position: relative;
+  height: 100vh;
   width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #383131;
+  border-top : 5px black solid;
+  background-image: url('media/ong1.gif') ;
+  background-size: cover;
 }
+
+.ong h3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+  color: rgb(168, 112, 15);
+}
+
+.ong p {
+  transition: 1s;
+  color: white;
+  background-color:black;
+  opacity: 0.6;
+
+
+}
+
+.ong button {
+  position: relative;
+  transition: 1s;
+
+}
+
+
 
 .col-sm-12 .border-5  {
   border-width: 4px !important;
-  border-color:rgb(216, 211, 166) !important;
+  border-color:rgb(168, 112, 15) !important;
   height:45px;
 }
 
@@ -236,7 +296,7 @@ h3 {
 
 
 .section-2 {
-  height: 75vh;
+  height: 100vh;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -248,8 +308,12 @@ h3 {
   background-size: cover;
   flex-direction: column;
   padding-top:12vh;
+
 }
 
+.section-2 .container {
+
+}
 .title {
   position: relative;
   width: 100%;
@@ -362,6 +426,44 @@ h3 {
 }
 
 
+.contact {
+  padding-top: 100vh;
+
+}
+
+.formulaire {
+  color: white;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 26px
+  margin:auto;
+  padding-top:15px;
+  background-image: url('media/contact.gif');
+  background-size: cover;
+
+}
+
+.formulaire h4 {
+  margin-bottom: 10vh;
+  font-size: 56px;
+  font-family: helvetica;
+  border-bottom : 1px solid white;
+}
+.form {
+    padding-top: 15px;
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-left: 202.61px;
+  padding-top: 15px;
+}
+
 
 /* ANIMAL.PHP CSS */
 
@@ -371,13 +473,19 @@ h3 {
   border:solid 2px black;
 }
 
+.fiche{
+  margin-top: -5vh;
+}
+
+
 section {
   background-color: #1A1A1A;
   background-image: url('') ;
 }
 
-#main {
-
+.grey-hover {
+  background-color: black;
+  opacity: 0.5;
 }
 
 .card-img-overlay {
