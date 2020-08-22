@@ -1,9 +1,11 @@
 
 
 <?php
+session_start();
 require('controller.php');
 require('Animaux.php');
 
-animalDelete($_GET['id']);
+$user = $_SESSION['username'];
+animalDelete($_GET['id'], $user);
 
 ?>

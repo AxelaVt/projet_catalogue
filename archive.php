@@ -1,13 +1,12 @@
 
 
 <?php
+session_start();
 require('controller.php');
 require('Animaux.php');
 
 
-
-animalArchived($_GET['id']);
-
-
+$user=$_SESSION['username'];
+animalArchived($_GET['id'],$user);
 
 ?>

@@ -1,57 +1,36 @@
 
 <?php
 session_start();
+require('controller.php');
+require('Users.php');
 
 if(isset($_POST['username']) && isset($_POST['password'])){
-    // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
-    // pour éliminer toute attaque de type injection SQL et XSS
-    $username = htmlspecialchars($_POST['username']);
-    $password = htmlspecialchars($_POST['password']);
-     // var_dump($username);
-     // var_dump($password);
-    //
-    //if($username !== "" && $password !== ""){
-    //       try {
-    //         //$stmt = $conn->query("SELECT COUNT(*) FROM users where username = $username and password = $password ");
-    //         $stmt = $conn->query("SELECT count(*) FROM users where
-    //           username = '".$username."' and password = '".$password."' ");
-    //         $executeIsOk = $stmt->execute();
-    //         $reponse = $stmt->fetchAll();
-    //         // echo "stmt";
-    //         // var_dump($stmt);
-    //         // echo "reponse";
-    //         // var_dump($reponse);
-    //
-    //         if ($executeIsOk == true) {
-    //         echo "la requête fonctionne";
-    //         }
-    //
-    //         $count = $reponse[0]['count(*)'];
-    //         echo "count";
-    //         var_dump($count);
-    //         if($count!=0) // nom d'utilisateur et mot de passe correctes
-    //         {
-                $_SESSION['username'] = $username;
-                $_SESSION['admin'] = true;
-                //header('Location: admin.php');
-                header("Refresh: 3;URL=admin.php");
-    //         }
-    //         else
-    //         {
-    //            header('Location: connexionView.php?erreur=1'); // utilisateur ou mot de passe incorrect
-    //         }
-    //       }
-    //       catch (\Exception $e) {
-    //         echo $e->getMessage();
-    //       }
-    //   }
-    //   else
-    //   {
-    //      header('Location: connexionView.php?erreur=2'); // utilisateur ou mot de passe vide
-    //   }
-    //  header('Location: admin.php');
-    }
-    // else
-    // {
-    //    header('Location: connexionView.php');
-    // }
+  // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
+  // pour éliminer toute attaque de type injection SQL et XSS
+  $username = htmlspecialchars($_POST['username']);
+  $password = htmlspecialchars($_POST['password']);
+   // var_dump($username);
+   // var_dump($password);
+
+  if($username !== "" && $password !== ""){
+
+     $user = userConnexion($username, $password);
+     //var_dump($user);
+     if ($user === 'true') {
+      $_SESSION['username'] = $username;
+      $_SESSION['password'] = $password;
+      $_SESSION['admin'] = 'true';
+      //header('Location: admin.php');
+      header("Refresh: 1; URL=admin.php");
+      }
+      else
+      {
+         header('Location: view/connexionView.php?erreur=1'); // utilisateur ou mot de passe incorrect
+
+      }
+  }
+  else
+  {
+     header('Location: view/connexionView.php?erreur=2'); // utilisateur ou mot de passe vide
+  }
+}

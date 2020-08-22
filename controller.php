@@ -8,10 +8,17 @@ function animalsList()
   $animals = $animalsManager->get_all();  // Appel la fonction qui renvoie toutes les données sur les animaux en bdd
 
   require('view/accueilView.php');
-
 }
 
-function animalsListAdmin()
+function usersList($user)
+{
+  $usersManager = new Users();
+  $users = $usersManager->get_all();
+
+  require('view/adminView.php');
+}
+
+function animalsListAdmin($user)
 {
   $animalsManager = new Animaux(); // Création d'un objet
   $animals = $animalsManager->get_all();  // Appel la fonction qui renvoie toutes les données sur les animaux en bdd
@@ -36,15 +43,15 @@ function animalAdd($name, $type, $family, $alim, $description, $photo)
 
 }
 
-function animalDelete($id)
+function animalDelete($id, $user)
 {
   $animalsManager = new Animaux();
   $animal = $animalsManager->remove($_GET['id']);
 
-  animalsListAdmin();
+  animalsListAdmin($user);
 }
 
-function animalArchived($id){
+function animalArchived($id, $user){
   $animalsManager = new Animaux();
   $animal = $animalsManager->get_id($id);
 
@@ -53,7 +60,7 @@ function animalArchived($id){
   } else {
     $animalsManager->unarchive($animal['id']);
   }
-  animalsListAdmin();
+  animalsListAdmin($user);
 }
 
 function animalChange($id)
@@ -81,12 +88,38 @@ function animalChange($id)
 }
 
 
-function animalPage()
+function animalPage($id)
 {
   $animalsManager = new Animaux();
   $animal = $animalsManager->get_id($id);
 
     require('view/animalView.php');
+}
+
+//change password
+function changePassword($password, $username)
+{
+  $usermanager = new Users();
+  $passwordbdd = $usermanager->get_username($username); //recup les données associées au user connecté
+  $usermanager->set_password($passwordbdd['id'], $password);// enregistre le nouveau password en lien ave l'id connecté
+  $newpasswordbdd = $usermanager->get_username($username); // recupère les données associées au user connecté
+  if ($newpasswordbdd['password'] === $password) {
+    return 'true';
+  }else{
+    return 'false';
+  }
+}
+
+function userConnexion($username, $password)
+{
+  $usermanager = new Users();
+  $passwordbdd = $usermanager->get_username($username);
+
+  if ($passwordbdd['password'] === $password ) {  //s'il trouve un password c'est que user exist, et  password est il correct?
+    return 'true';
+  } else {
+    return 'false';
+  }
 }
 
 ?>
