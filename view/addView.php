@@ -4,7 +4,7 @@ include "header.php";
 
 ?>
 
-<div class="container form h-80 justify-content-center align-items-center">
+<div class="container form h-80 justify-content-center align-items-center border">
 
     <form action="../add.php" method="post" class="w-80 p-5" enctype="multipart/form-data">
       <div class="form-group">
@@ -41,7 +41,7 @@ include "header.php";
 
       <div class="form-group">
       <label for="description">Description:</label>
-      <textarea type="text" id="" class="form-control" rows="10" cols="50" name="description"></textarea>
+      <textarea type="text" id="" class="form-control" rows="6" cols="50" name="description"></textarea>
       </div>
       <button type="submit" class="btn btn-secondary" name="submit">Enregistrer</button>
       <!-- <button type="button" value="Annuler" onclick="history.back()" class="btn btn-primary">Annuler</button> -->
