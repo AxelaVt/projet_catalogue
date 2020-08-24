@@ -104,72 +104,157 @@
     </section> <!-- Fin ong -->
 
 
-<section>
+<section class="background-2">
   <div class="section-2">
-
+    <span class="banner">
     <div class="title">
       <div class="content">
         <h1> Catégories</h1>
         <p> Retrouvez ici l'animal que vous souhaitez selon son cadre géographique, son espèce, son régime alimentaire ou tout simplement par son nom. </p>
       </div>
     </div>
+  </span>
       <div class="container">
-    			<div class="box">
-    				<a href="#"><img src="media/whitewolf.jpg"></a>
-            <div class="box-overlay">
-              <div class="text">Hello World
-              </div>
-            </div>
-    			</div>
-    			<div class="box">
-    			<a href="#"><img src="media/turtle.jpg"> </a>
-    			</div>
-    			<div class="box">
-    				<a href="#"><img src="media/cerf.jpg"></a>
-    			</div>
-    			<div class="box">
-    				<a href="animal.php"><img src="media/lion.jpg"></a>
-    	</div>
-      <div class="box">
-        <a href="#"><img src="media/bears.jpeg"></a>
-      </div>
-      <div class="box">
-        <a href="#"><img src="media/chat.jpg"></a>
-      </div>
-      <div class="box">
-        <a href="#"><img src="media/tigre.jpg"></a>
-      </div>
-      <div class="box">
-        <a href="#"><img src="media/panthere.jpg"></a>
-      </div>
-      <div class="box">
-        <a href="#"><img src="media/lynx.jpg"></a>
-      </div>
-      <div class="box">
-        <a href="#"><img src="media/leopard.jpg"></a>
-      </div>
+        <div class='items'>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-0'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Cerf
+                 </text>
+                 <g clip-path='url(#clip-0)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/cerf.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                    Cerf
+                   </text>
+                 </g>
+               </svg>
+             </div>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-1'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Léopard
+                 </text>
+                 <g clip-path='url(#clip-1)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/leopard.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                     Léopard
+                   </text>
+                 </g>
+               </svg>
+             </div>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-2'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Lion
+                 </text>
+                 <g clip-path='url(#clip-2)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/lion.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                     Lion
+                   </text>
+                 </g>
+               </svg>
+             </div>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-3'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Panthere
+                 </text>
+                 <g clip-path='url(#clip-3)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/panthere.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                    Panthere
+                   </text>
+                 </g>
+               </svg>
+             </div>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-4'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Tortue
+                 </text>
+                 <g clip-path='url(#clip-4)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/turtle.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                    Tortue
+                   </text>
+                 </g>
+               </svg>
+             </div>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-5'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Loup blanc
+                 </text>
+                 <g clip-path='url(#clip-5)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/whitewolf.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                    Loup blanc
+                   </text>
+                 </g>
+               </svg>
+             </div>
     </div>
   </div>
 </section>
 
 
-<section class="contact">
-<div class="formulaire">
-  <h4> Nous contacter </h4>
-  <form action="" method="get" class="form-example">
-    <div class="form">
-      <input type="text" name="name" id="name" placeholder="Veuillez indiquer votre nom" style="width: 512px;" required>
-    </div>
-    <div class="form">
-      <input type="email" name="email" id="email" placeholder="Veuillez indiquer votre email" style="width: 512px;" required>
-    </div>
-    <div class="form">
-      <input type="text" name="message" id="message" placeholder="Veuillez indiquer votre message" style=" width: 512px; height:256px;" required>
-    </div>
-    <div class="form-button">
-      <input type="submit" value="Envoyer">
-    </div>
-  </form>
+<section class="section-3">
+  <div class="formulaire">
+  <div class="contact-box contact">
+    <h2>Nous contacter</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="name" id="name" required="">
+        <label>Nom</label>
+      </div>
+      <div class="user-box">
+        <input type="email" name="" id="email" required="">
+        <label>E-mail</label>
+      </div>
+          <div class="user-box">
+        <input type="text" name="message" id="message" required="" style="height:256px;">
+        <label>Message</label>
+      </div>
+      <a href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+    </form>
+  </div>
 </div>
 <section>
 
@@ -178,11 +263,56 @@
 
 
 
-
-<script> ScrollReveal().reveal('.scrollout', { delay: 2000 }); </script>
-<script src="scrollout.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="index.js"></script>
+<script> var items = []
+  , point = document.querySelector('svg').createSVGPoint();
+
+function getCoordinates(e, svg) {
+  point.x = e.clientX;
+  point.y = e.clientY;
+  return point.matrixTransform(svg.getScreenCTM().inverse());
+}
+
+function changeColor(e) {
+  document.body.className = e.currentTarget.className;
+}
+
+function Item(config) {
+  Object.keys(config).forEach(function (item) {
+    this[item] = config[item];
+  }, this);
+  this.el.addEventListener('mousemove', this.mouseMoveHandler.bind(this));
+  this.el.addEventListener('touchmove', this.touchMoveHandler.bind(this));
+}
+
+Item.prototype = {
+  update: function update(c) {
+    this.clip.setAttribute('cx', c.x);
+    this.clip.setAttribute('cy', c.y);
+  },
+  mouseMoveHandler: function mouseMoveHandler(e) {
+    this.update(getCoordinates(e, this.svg));
+  },
+  touchMoveHandler: function touchMoveHandler(e) {
+    e.preventDefault();
+    var touch = e.targetTouches[0];
+    if (touch) return this.update(getCoordinates(touch, this.svg));
+  }
+};
+
+[].slice.call(document.querySelectorAll('.item'), 0).forEach(function (item, index) {
+  items.push(new Item({
+    el: item,
+    svg: item.querySelector('svg'),
+    clip: document.querySelector('#clip-'+index+' circle'),
+  }));
+});
+
+[].slice.call(document.querySelectorAll('button'), 0).forEach(function (button) {
+  button.addEventListener('click', changeColor);
+}); </script>
+
 </body>
 
 </html>
