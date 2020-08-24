@@ -5,7 +5,8 @@
     <title></title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"7 integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <header>
@@ -90,7 +91,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6">
-              <div class=" border-5 border-left border-dark mb-5 pl-4"> <h3 class="scrollout"> SOUTENONS LA CAUSE ANIMALE </h3> </div>
+              <div class="border-5 border-left border-dark mb-5"> <h3 class="scrollout"> SOUTENONS LA CAUSE ANIMALE </h3> </div>
               <div>
               <p class=" scrollout">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <br><br>
               The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' <p>
@@ -104,16 +105,66 @@
     </section> <!-- Fin ong -->
 
 
-<section class="background-2">
+
   <div class="section-2">
-    <span class="banner">
-    <div class="title">
-      <div class="content">
-        <h1> Catégories</h1>
-        <p> Retrouvez ici l'animal que vous souhaitez selon son cadre géographique, son espèce, son régime alimentaire ou tout simplement par son nom. </p>
-      </div>
+    <div class="wrapper">
+      <!-- <h1 class="title" data-text="Bestiaire">Bestiaire</h1> -->
+    <div class="banniere">
+      <ul class="text hidden">
+        <li>B</li>
+        <li>E</li>
+        <li>S</li>
+        <li>T</li>
+        <li>I</li>
+        <li>A</li>
+        <li>I</li>
+        <li>R</li>
+        <li>E</li>
+         <li>&nbsp;</li>
+         <li>:</li>
+        <li class="spaced"> &nbsp; </li>
+        <li class="ghost">R</li>
+        <li class="ghost">e</li>
+        <li class="ghost">t</li>
+        <li class="ghost">r</li>
+        <li class="ghost">o</li>
+        <li class="ghost">u</li>
+        <li class="ghost">v</li>
+        <li class="ghost">e</li>
+        <li class="ghost">r</li>
+        <li class="ghost">&nbsp;</li>
+        <li class="ghost">l</li>
+        <li class="ghost">a</li>
+        <li class="ghost">&nbsp;</li>
+        <li class="ghost">l</li>
+        <li class="ghost">i</li>
+          <li class="ghost">s</li>
+        <li class="ghost">t</li>
+        <li class="ghost">e</li>
+        <li class="ghost">&nbsp;</li>
+        <li class="ghost">d</li>
+          <li class="ghost">e</li>
+        <li class="ghost">&nbsp;</li>
+        <li class="ghost">t</li>
+        <li class="ghost">o</li>
+        <li class="ghost">u</li>
+          <li class="ghost">t</li>
+        <li class="ghost">&nbsp;</li>
+        <li class="ghost">l</li>
+        <li class="ghost">e</li>
+        <li class="ghost">s</li>
+          <li class="ghost">&nbsp;</li>
+        <li class="ghost">a</li>
+        <li class="ghost">n</li>
+        <li class="ghost">i</li>
+        <li class="ghost">m</li>
+          <li class="ghost">a</li>
+        <li class="ghost">u</li>
+        <li class="ghost">x</li>
+        <li class="ghost">&nbsp;</li>
+      </ul>
     </div>
-  </span>
+
       <div class="container">
         <div class='items'>
              <div class='item'>
@@ -127,7 +178,7 @@
                    Cerf
                  </text>
                  <g clip-path='url(#clip-0)'>
-                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/cerf.jpg'></image>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/cerf2.jpg'></image>
                    <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
                     Cerf
                    </text>
@@ -224,9 +275,64 @@
                  </g>
                </svg>
              </div>
-    </div>
-  </div>
-</section>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-6'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Aigle
+                 </text>
+                 <g clip-path='url(#clip-6)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/aigle.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                    Aigle
+                   </text>
+                 </g>
+               </svg>
+             </div>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-7'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Singe
+                 </text>
+                 <g clip-path='url(#clip-7)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/singe.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                    Singe
+                   </text>
+                 </g>
+               </svg>
+             </div>
+             <div class='item'>
+               <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                 <defs>
+                   <clipPath id='clip-8'>
+                     <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                   </clipPath>
+                 </defs>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                   Panda Roux
+                 </text>
+                 <g clip-path='url(#clip-8)'>
+                   <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='media/pandaroux.jpg'></image>
+                   <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                    Panda roux
+                   </text>
+                 </g>
+               </svg>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
 
 
 <section class="section-3">
@@ -251,7 +357,7 @@
         <span></span>
         <span></span>
         <span></span>
-        Submit
+        Envoyer
       </a>
     </form>
   </div>
@@ -262,56 +368,9 @@
 
 
 
-
+<script src="scrollout.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="index.js"></script>
-<script> var items = []
-  , point = document.querySelector('svg').createSVGPoint();
-
-function getCoordinates(e, svg) {
-  point.x = e.clientX;
-  point.y = e.clientY;
-  return point.matrixTransform(svg.getScreenCTM().inverse());
-}
-
-function changeColor(e) {
-  document.body.className = e.currentTarget.className;
-}
-
-function Item(config) {
-  Object.keys(config).forEach(function (item) {
-    this[item] = config[item];
-  }, this);
-  this.el.addEventListener('mousemove', this.mouseMoveHandler.bind(this));
-  this.el.addEventListener('touchmove', this.touchMoveHandler.bind(this));
-}
-
-Item.prototype = {
-  update: function update(c) {
-    this.clip.setAttribute('cx', c.x);
-    this.clip.setAttribute('cy', c.y);
-  },
-  mouseMoveHandler: function mouseMoveHandler(e) {
-    this.update(getCoordinates(e, this.svg));
-  },
-  touchMoveHandler: function touchMoveHandler(e) {
-    e.preventDefault();
-    var touch = e.targetTouches[0];
-    if (touch) return this.update(getCoordinates(touch, this.svg));
-  }
-};
-
-[].slice.call(document.querySelectorAll('.item'), 0).forEach(function (item, index) {
-  items.push(new Item({
-    el: item,
-    svg: item.querySelector('svg'),
-    clip: document.querySelector('#clip-'+index+' circle'),
-  }));
-});
-
-[].slice.call(document.querySelectorAll('button'), 0).forEach(function (button) {
-  button.addEventListener('click', changeColor);
-}); </script>
 
 </body>
 
