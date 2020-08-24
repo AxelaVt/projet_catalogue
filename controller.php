@@ -1,6 +1,7 @@
 
 <?php
 
+
 //en poo class Animaux,
 function animalsList()
 {
@@ -10,12 +11,13 @@ function animalsList()
   require('view/accueilView.php');
 }
 
+//$user = utilisateur connecté
 function usersList($user)
 {
   $usersManager = new Users();
-  $users = $usersManager->get_all();
+  $adms = $usersManager->get_all();
 
-  require('view/adminView.php');
+  //require('view/adminView.php');
 }
 
 function animalsListAdmin($user)

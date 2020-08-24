@@ -1,11 +1,10 @@
 
 <?php
 session_start();
-require('controller.php');
-require('Animaux.php');
 require('Users.php');
+require('Animaux.php');
+require('controller.php');
 
-//var_dump($_GET);
 
 
 
@@ -28,6 +27,5 @@ if(isset($_GET['deconnexion']) && $_GET['deconnexion']==true){
   header("location:index.php");
 }
 
-
+usersList($user);
 animalsListAdmin($user);
-//usersList($user);
