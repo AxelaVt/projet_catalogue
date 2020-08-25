@@ -1,8 +1,20 @@
-
-
 @font-face {
 	font-family: "Rude";
-	src: url('fonts/Road_Rage.otf');
+	src: url('fonts/Rude-400.ttf');
+}
+
+.parallax {
+  /* The image used */
+  /* background-image: url("img_parallax.jpg"); */
+
+  /* Set a specific height */
+  /* height: 500px; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sidebar-navigation input[type=text] {
@@ -125,7 +137,7 @@
   cursor: pointer;
   background-color: #111;
   color: white;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   border: none;
 }
 
@@ -224,7 +236,6 @@ figure {
 html {
   background-color: #1A1A1A;
   height: 100%;
-
 }
 
 .ong {
@@ -271,6 +282,7 @@ html {
   border-width: 4px !important;
   border-color:rgb(168, 112, 15) !important;
   height:45px;
+	padding-left: 15px;
 }
 
 .container div {
@@ -281,12 +293,9 @@ html {
 padding-top: 25vh;
 }
 
-
-
 .row {
   margin: 0 !important;
 }
-
 .col-sm-12 img {
   width: 100%;
   margin-top: 0vh;
@@ -320,7 +329,6 @@ h3 {
 	min-height: 100%;
   min-width: 100%;
   background-color: #1A1A1A;
-
   background-image: url('media/categorie.jpg');
   background-size: auto;
   flex-direction: column;
@@ -355,7 +363,6 @@ h3 {
 
 .content p {
   color:#362241;
-
 }
 
 .content {
@@ -386,8 +393,6 @@ h3 {
   height: 100%;
   background
 }
-
-
 
 .banniere {
   position: relative;
@@ -437,7 +442,7 @@ h3 {
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 .wrapper {
   animation: sliding-background 40s linear infinite;
-  background: url("https://free4kwallpapers.com/uploads/originals/2018/09/27/a-new--from-louis-coyle-wallpaper.jpg") no-repeat left/120%;
+  background: url("media/categorie.jpg") no-repeat left/120%;
   height: 100vh;
   text-align: center;
   width: 99vw;
@@ -459,7 +464,6 @@ h3 {
 /* Fin bannière */
 
 /* Catalogue */
-
 .container
 {
   padding-right:0px !important;
@@ -531,9 +535,6 @@ h3 {
 {
 	bottom: -100%;
 }
-
-
-
 
 svg {
   position: absolute;
@@ -667,6 +668,7 @@ button.light {
 }
 
 
+
 .formulaire {
   color: white;
   letter-spacing: 2px;
@@ -681,7 +683,6 @@ button.light {
   background-size: cover;
   position: relative;
   height: 100%;
-
 }
 
 .formulaire h4 {
@@ -701,7 +702,6 @@ button.light {
   margin-left: 202.61px;
   padding-top: 15px;
 }
-
 
 
 /* Contact */
@@ -863,7 +863,6 @@ button.light {
     bottom: 100%;
   }
 }
-
 
 
 /* ANIMAL.PHP CSS */
