@@ -27,5 +27,7 @@ if(isset($_GET['deconnexion']) && $_GET['deconnexion']==true){
   header("location:index.php");
 }
 
-usersList($user);
-animalsListAdmin($user);
+
+$adms = getUsersList($user);
+$animals = getAnimalsListAdmin($user);
+require('view/adminView.php');

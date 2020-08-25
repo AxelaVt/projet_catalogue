@@ -12,20 +12,20 @@ function animalsList()
 }
 
 //$user = utilisateur connecté
-function usersList($user)
+function getUsersList($user)
 {
   $usersManager = new Users();
   $adms = $usersManager->get_all();
-
+  return $adms;
   //require('view/adminView.php');
 }
 
-function animalsListAdmin($user)
+function getAnimalsListAdmin($user)
 {
   $animalsManager = new Animaux(); // Création d'un objet
   $animals = $animalsManager->get_all();  // Appel la fonction qui renvoie toutes les données sur les animaux en bdd
+  return $animals;
 
-    require('view/adminView.php');
 }
 
 function animalAdd($name, $type, $family, $alim, $description, $photo)
