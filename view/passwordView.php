@@ -34,9 +34,9 @@ $user=$_SESSION['username'];?>
             <input type="password" id="pass2" class="form-control" placeholder="Entrer le mot de passe" name="password2" onchange="passverif()" minlength="8" required>
           </div>
           <div class="col-lg-6 login-btm login-button float-sm-right">
-          <button type="submit" class="btn btn-outline-primary">Change</button>
+          <button type="submit" class="btn btn-outline-primary my-1">Change</button>
           <!-- <a href:"../admin.php"><button class="btn btn-outline-primary">Cancel</button></a> -->
-          <button type="button" value="Cancel" onclick="history.back()" class="btn btn-outline-primary">Cancel</button>
+          <button type="button" value="Cancel" onclick="history.back()" class="btn btn-outline-primary my-1">Cancel</button>
           </div>
         </form>
   </div>
