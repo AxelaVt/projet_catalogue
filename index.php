@@ -67,7 +67,7 @@
           <button class="openbtn" onclick="openNav()">&#9776; </button>
         </div>
       </div>
-          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <video class="parallax" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="media/wildlife.mp4" type="video/mp4">
             </video>
       <div class="container h-100">
@@ -81,7 +81,7 @@
       </div>
     </div>
 
-    <section class="ong" > <!-- Page ong -->
+    <section class="ong parallax" > <!-- Page ong -->
       <div class="container-">
         <!-- <span class="border-animation" >
           <div class="border-animation__inner"> -->
@@ -107,7 +107,7 @@
 
 
   <div class="section-2">
-    <div class="wrapper">
+    <div class="wrapper parallax">
       <!-- <h1 class="title" data-text="Bestiaire">Bestiaire</h1> -->
     <div class="banniere">
       <ul class="text hidden">
@@ -336,7 +336,7 @@
 
 
 <section class="section-3">
-  <div class="formulaire">
+  <div class="formulaire parallax">
   <div class="contact-box contact">
     <h2>Nous contacter</h2>
     <form>

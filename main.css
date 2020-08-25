@@ -1,6 +1,20 @@
 @font-face {
 	font-family: "Rude";
-	src: url('fonts/Road_Rage.otf');
+	src: url('fonts/Rude-400.ttf');
+}
+
+.parallax {
+  /* The image used */
+  /* background-image: url("img_parallax.jpg"); */
+
+  /* Set a specific height */
+  /* height: 500px; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sidebar-navigation input[type=text] {
@@ -268,6 +282,7 @@ html {
   border-width: 4px !important;
   border-color:rgb(168, 112, 15) !important;
   height:45px;
+	padding-left: 15px;
 }
 
 .container div {
@@ -427,7 +442,7 @@ h3 {
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 .wrapper {
   animation: sliding-background 40s linear infinite;
-  background: url("https://free4kwallpapers.com/uploads/originals/2018/09/27/a-new--from-louis-coyle-wallpaper.jpg") no-repeat left/120%;
+  background: url("media/categorie.jpg") no-repeat left/120%;
   height: 100vh;
   text-align: center;
   width: 99vw;
