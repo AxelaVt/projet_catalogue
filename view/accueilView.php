@@ -185,7 +185,8 @@
     </div>
   </div>
 </div>
-  
+</div>
+    
 <section class="section-3">
   <div class="formulaire parallax">
   <div class="contact-box contact">
