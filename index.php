@@ -7,4 +7,5 @@ require_once 'Animaux.php';
 
 animalsList();
 
-
+include "Users.php";
+$test = new Users();

@@ -5,7 +5,7 @@ require_once 'model.php';
 class Animaux extends MODEL {
 
   public function __construct() {
-    $this->data_base = "catalog_animaux";
+    $this->data_base = "tuncayb_catalog_animaux";
     $this->table = "animaux";
     $this->table_columns = "(
       id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
