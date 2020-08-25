@@ -1,5 +1,5 @@
 <?php
-require 'MODEL.php';
+require 'model.php';
 
 class Animaux extends MODEL {
 
