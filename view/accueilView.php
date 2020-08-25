@@ -30,7 +30,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="view/connexionView.php">
             <i class="fa fa-tachometer" aria-hidden="true"></i> Admin
           </a>
         </li>
