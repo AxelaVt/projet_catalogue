@@ -1,3 +1,5 @@
+
+
 @font-face {
 	font-family: "Rude";
 	src: url('fonts/Road_Rage.otf');
@@ -222,6 +224,7 @@ figure {
 html {
   background-color: #1A1A1A;
   height: 100%;
+
 }
 
 .ong {
@@ -278,9 +281,12 @@ html {
 padding-top: 25vh;
 }
 
+
+
 .row {
   margin: 0 !important;
 }
+
 .col-sm-12 img {
   width: 100%;
   margin-top: 0vh;
@@ -314,6 +320,7 @@ h3 {
 	min-height: 100%;
   min-width: 100%;
   background-color: #1A1A1A;
+
   background-image: url('media/categorie.jpg');
   background-size: auto;
   flex-direction: column;
@@ -348,6 +355,7 @@ h3 {
 
 .content p {
   color:#362241;
+
 }
 
 .content {
@@ -378,6 +386,8 @@ h3 {
   height: 100%;
   background
 }
+
+
 
 .banniere {
   position: relative;
@@ -449,6 +459,7 @@ h3 {
 /* Fin bannière */
 
 /* Catalogue */
+
 .container
 {
   padding-right:0px !important;
@@ -520,6 +531,9 @@ h3 {
 {
 	bottom: -100%;
 }
+
+
+
 
 svg {
   position: absolute;
@@ -653,7 +667,6 @@ button.light {
 }
 
 
-
 .formulaire {
   color: white;
   letter-spacing: 2px;
@@ -668,6 +681,7 @@ button.light {
   background-size: cover;
   position: relative;
   height: 100%;
+
 }
 
 .formulaire h4 {
@@ -687,6 +701,7 @@ button.light {
   margin-left: 202.61px;
   padding-top: 15px;
 }
+
 
 
 /* Contact */
@@ -848,6 +863,7 @@ button.light {
     bottom: 100%;
   }
 }
+
 
 
 /* ANIMAL.PHP CSS */
