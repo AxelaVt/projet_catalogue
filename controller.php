@@ -50,7 +50,7 @@ function animalDelete($id, $user)
   $animalsManager = new Animaux();
   $animal = $animalsManager->remove($_GET['id']);
 
-  animalsListAdmin($user);
+  getanimalsListAdmin($user);
 }
 
 function animalArchived($id, $user){
