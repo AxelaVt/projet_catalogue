@@ -14,4 +14,4 @@ $( document ).ready(function() {
 });
 
 
-ScrollReveal().reveal('.scrollout', { delay: 500 });
+
