@@ -170,7 +170,7 @@
                      <circle cx='0' cy='0' fill='#000' r='150px'></circle>
                    </clipPath>
                  </defs>
-                 <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                 <text class='svg-text' dy='.3em' x='50%' y='50%'><?php echo $animal['name'];?>
 
                  </text>
                  <g clip-path='url(#clip-0)'>
