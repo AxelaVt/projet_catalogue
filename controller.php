@@ -62,7 +62,7 @@ function animalArchived($id, $user){
   } else {
     $animalsManager->unarchive($animal['id']);
   }
-  animalsListAdmin($user);
+  getanimalsListAdmin($user);
 }
 
 function animalChange($id)
