@@ -115,11 +115,11 @@
       <div class="col-md-8">
         <div class="card-body">
           <h5 class="card-title text-white"><?php echo $animal['name']; ?></h5>
-          <h6 class="card-subtitle text-white">Panthera leo</h5>
-            <a href="#" data-toggle="popover"  class="location"></a>
-            <a href="#" data-toggle="popover"  class="species"></a>
-            <a href="#" data-toggle="popover"  class="family"></a>
-            <a href="#" data-toggle="popover"  class="food"></a>
+          <!-- <h6 class="card-subtitle text-white">Panthera leo</h5> -->
+            <a href="../dna.png" data-toggle="popover"  class="location"></a>
+            <a href="../globe.png" data-toggle="popover"  class="species"></a>
+            <a href="../pet.png#" data-toggle="popover"  class="family"></a>
+            <a href="../food.png" data-toggle="popover"  class="food"></a>
           <p class="card-text text-white">Localisation: Savane africaine</p>
           <p class="card-text text-white">Famille : <?php echo $animal['family']; ?></p>
           <p class="card-text text-white">Espèce : <?php echo $animal['type']; ?></p>
